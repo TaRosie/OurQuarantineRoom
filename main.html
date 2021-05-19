@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Rosie Capstone</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/addons/p5.sound.min.js"></script> -->
+    <script src="/main.js" defer></script>
+  </head>
+  <body>
+    <div id="video-container"></div>
+    <div id="speaker-container"></div>
+    <div id="chat-container">
+      <p class="question" onclick="changeSubject('food');">
+        What is your experience with food?
+      </p>
+      <p class="question" onclick="changeSubject('memory');">
+        What was your most vivid memory?
+      </p>
+      <p class="question" onclick="changeSubject('color');">
+        Use a color to describe your experience.
+      </p>
+      <!-- <p class="question">
+        What do you think of quarantine?
+      </p> -->
+    </div>
+    <div class="navbar">
+      <a id="btn-home" class="active">Home</a>
+      <a id="btn-chat">Chat</a>
+      <a id="btn-more" href="info.html">More</a>
+    </div>
+  </body>
+</html>
